@@ -23,5 +23,10 @@ demo = gr.Interface(
     outputs="text",
     title="Image Captioning with BLIP",
     description="Upload an image to generate a caption.",
+    examples=[
+        "data/lion.jpg",
+        "data/photographer.png",
+        "data/dog.png",
+    ],
 )
 demo.launch(server_name="127.0.0.1", server_port=7860)
