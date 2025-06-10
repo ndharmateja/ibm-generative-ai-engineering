@@ -48,6 +48,6 @@ for img_element in img_elements:
         print(f"Error processing {img_url}: {e}")
         continue
 
-with open("captions.txt", "w") as f:
+with open("output/captions.txt", "w") as f:
     for img_url, caption in captions.items():
         f.write(f"{img_url}:\n{caption}\n\n")
